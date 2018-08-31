@@ -21,4 +21,33 @@ html(lang="en")
               a.nav-link(href="create-head-section") Create
             li.nav-item
               a.nav-link(href="share-head-section") Share
-        
+    
+    header#home.Home
+      .dark-overlay
+        .container
+          .row
+            .col-lg-8.d-none.d-lg-block
+              h1.display-4 
+                | Build 
+                strong social 
+                | profiles and gain revenue profits
+              for n in [0,1,2]
+                .d-flex.align-items-center.justify-content-between
+                  .p-4
+                    i.fas.fa-check.fa-2x
+                  .p-4 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi libero delectus deserunt omnis dignissimos fugit?
+            .col-lg-4
+              .card.bg-primary.text-center
+                .card-body
+                  h3 Sign Up Today
+                  p Please fill out this form to register
+                  form
+                    .form-group
+                      input(type="text" placeholder="Username").form-control.form-control-lg
+                    .form-group
+                      input(type="email" placeholder="Email").form-control.form-control-lg
+                    .form-group
+                      input(type="password" placeholder="Password").form-control.form-control-lg
+                    .form-group
+                      input(type="password" placeholder="Confirm Password").form-control.form-control-lg
+                    input(type="submit" value="Submit").btn.btn-outline-light.btn-block

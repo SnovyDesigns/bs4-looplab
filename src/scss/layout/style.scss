@@ -7,3 +7,34 @@ body {
   border-bottom: 3px solid #008ed6;
   opacity: 0.8;
 }
+
+.Home {
+  background: iurl('home.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+
+  .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.7);
+  }
+
+  .container {
+    padding-top: 150px;
+  }
+
+  .card {
+    opacity: 0.8;
+  }
+
+  .fas {
+    color: #008ed6;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+  }
+}
