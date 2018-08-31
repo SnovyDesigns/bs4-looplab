@@ -19,7 +19,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 700px;
     background: rgba($color: #000000, $alpha: 0.7);
   }
 
@@ -34,6 +34,16 @@ body {
   .fas {
     color: #008ed6;
     background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+  }
+}
+
+.Explore,
+.Share {
+  .fas {
+    color: #fff;
+    background: #333;
     padding: 5px;
     border-radius: 5px;
   }
