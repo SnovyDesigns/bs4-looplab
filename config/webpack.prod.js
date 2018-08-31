@@ -133,7 +133,10 @@ module.exports = env => {
         test: /\.(html|css|js)/,
         algorithm: 'gzip'
       }),
-      new BrotliPlugin()
+      new BrotliPlugin({
+        test: /\.(js|css|html|svg)$/,
+        deleteOriginalAssets: true
+      })
     ]
   };
 };
