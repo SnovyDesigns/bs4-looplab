@@ -6,9 +6,9 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title LoopLab Social Theme
   
-  body
+  body#home(data-spy="scroll" data-target="#main-nav")
     
-    nav.navbar.navbar-expand-sm.bg-dark.navbar-dark.fixed-top
+    nav#main-nav.navbar.navbar-expand-sm.bg-dark.navbar-dark.fixed-top
       .container
         a.navbar-brand(href="index.html") LoopLAB
         button.navbar-toggler(data-target="#navbarCollapse" data-toggle="collapse")
@@ -20,11 +20,11 @@ html(lang="en")
             li.nav-item
               a.nav-link(href="#explore-head-section") Explore
             li.nav-item
-              a.nav-link(href="create-head-section") Create
+              a.nav-link(href="#create-head-section") Create
             li.nav-item
-              a.nav-link(href="share-head-section") Share
+              a.nav-link(href="#share-head-section") Share
     
-    header#home.Home
+    header.Home
       .dark-overlay
         .container
           .row
@@ -45,14 +45,14 @@ html(lang="en")
                   p Please fill out this form to register
                   form
                     .form-group
-                      input(type="text" placeholder="Username").form-control.form-control-lg
+                      input.form-control.form-control-lg(type="text" placeholder="Username")
                     .form-group
-                      input(type="email" placeholder="Email").form-control.form-control-lg
+                      input.form-control.form-control-lg(type="email" placeholder="Email")
                     .form-group
-                      input(type="password" placeholder="Password").form-control.form-control-lg
+                      input.form-control.form-control-lg(type="password" placeholder="Password")
                     .form-group
-                      input(type="password" placeholder="Confirm Password").form-control.form-control-lg
-                    input(type="submit" value="Submit").btn.btn-outline-light.btn-block
+                      input.form-control.form-control-lg(type="password" placeholder="Confirm Password")
+                    input.btn.btn-outline-light.btn-block(type="submit" value="Submit")
 
     section#explore-head-section
       .container
@@ -119,6 +119,36 @@ html(lang="en")
                 .p-4
                   i.fas.fa-check.fa-2x
                 .p-4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque blanditiis nesciunt rerum nemo ipsum voluptates!
-              
+
+    footer.Footer.bg-dark
+      .container
+        .row
+          .col.text-center.py-4
+            h3 LoopLAB           
+            p 
+             | Copyright &copy; 
+             span#year
+            button.btn.btn-primary(data-target="#contactModal" data-toggle="modal") Contact
+    
+    #contactModal.modal.fade.text-dark
+      .modal-dialog
+        .modal-content
+          .modal-header
+            h5.modal-title Contact Us
+            button.close(data-dismiss="modal")
+              span &times;
+          .modal-body
+            form
+              .form-group
+                label(for="name") Name
+                input.form-control(type="text")
+              .form-group
+                label(for="email") Email
+                input.form-control(type="email")
+              .form-group
+                label(for="message") Message
+                textarea.form-control
+          .modal-footer
+            button.btn.btn-primary.btn-block(type='submit') Submit
 
 
